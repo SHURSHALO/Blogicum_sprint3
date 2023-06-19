@@ -47,6 +47,8 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
+POSTS_PER_PAGE = 5
+
 ROOT_URLCONF = 'blogicum.urls'
 
 TEMPLATES_DIR = BASE_DIR / 'templates'

@@ -5,15 +5,15 @@ from .models import Post, Category, Location
 
 
 class PostAdmin(admin.ModelAdmin):
-    search_fields = ['title', 'text', 'pub_date']
+    search_fields = ('title', 'text', 'pub_date')
 
 
 class CategoryAdmin(admin.ModelAdmin):
-    search_fields = ['title', 'description']
+    search_fields = ('title', 'description')
 
 
 class LocationAdmin(admin.ModelAdmin):
-    search_fields = ['name']
+    search_fields = ('name')
 
 
 admin.site.empty_value_display = 'Не задано'

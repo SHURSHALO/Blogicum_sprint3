@@ -14,8 +14,8 @@ class Category(PublishedModel):
     slug = models.SlugField(
         unique=True,
         verbose_name='Идентификатор',
-        help_text="Идентификатор страницы для URL; "
-                  "разрешены символы латиницы, цифры, дефис и подчёркивание."
+        help_text='Идентификатор страницы для URL; '
+                  'разрешены символы латиницы, цифры, дефис и подчёркивание.'
     )
 
     class Meta:
@@ -43,8 +43,8 @@ class Post(PublishedModel):
     pub_date = models.DateTimeField(
         auto_now=False,
         verbose_name='Дата и время публикации',
-        help_text="Если установить дату и время в будущем — "
-                  "можно делать отложенные публикации."
+        help_text='Если установить дату и время в будущем — '
+                  'можно делать отложенные публикации.'
     )
     author = models.ForeignKey(
         User,
@@ -71,6 +71,7 @@ class Post(PublishedModel):
     class Meta:
         verbose_name = 'публикация'
         verbose_name_plural = 'Публикации'
+        ordering = ['-pub_date']
 
     def __str__(self):
         return self.title
