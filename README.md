@@ -75,4 +75,5 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 Откройте веб-браузер и перейдите по адресу http://localhost:8000/, чтобы получить доступ к приложению Blogicum.
+
 Админка доступна по адресу http://127.0.0.1:8000/admin/
