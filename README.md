@@ -66,8 +66,13 @@ cd blogicum
 ```
 python manage.py migrate
 ```
+6. Создайте суперпользователя:
+```
+python manage.py createsuperuser
+```
 # Запуск
 ```
 python manage.py runserver
 ```
 Откройте веб-браузер и перейдите по адресу http://localhost:8000/, чтобы получить доступ к приложению Blogicum.
+Админка доступна по адресу http://127.0.0.1:8000/admin/
