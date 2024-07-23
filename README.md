@@ -3,27 +3,34 @@ Blogicum - это блоговая платформа на базе Django, ко
 
 # Установка
 1. Клонируйте репозиторий на свою локальную машину:
-
-   git clone git@github.com:SHURSHALO/django_sprint3.git
-
+```
+git clone git@github.com:SHURSHALO/Blogicum_sprint3.git
+```
 2. Перейдите в директорию проекта:
-
-   cd django_sprint1
-
+```
+cd Blogicum_sprint3
+```
 3. Создайте и активируйте виртуальное окружение (опционально):
-
-   python3 -m venv venv source venv/Scripts/activate
+```
+py -3.9 -m venv venv
+```
+```
+source venv/Scripts/activate
+```
 
 4. Установите необходимые зависимости:
-
-   pip install -r requirements.txt
-
+```
+pip install -r requirements.txt
+```
 5. Примените миграции базы данных:
-
-   python manage.py migrate
-
+```
+cd blogicum
+```
+```
+python manage.py migrate
+```
 # Запуск
-
+```
 python manage.py runserver
-
+```
 Откройте веб-браузер и перейдите по адресу http://localhost:8000/, чтобы получить доступ к приложению Blogicum.
